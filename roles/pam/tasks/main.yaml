@@ -1,0 +1,9 @@
+---
+- name: Ensure specific arguments are present in a rule
+  pamd:
+    name: "{{name}}"
+    type: "{{type}}"
+    control: "{{control}}"
+    module_path: "{{module}}"
+    module_arguments:  "{{arguments}}"
+    state: args_present

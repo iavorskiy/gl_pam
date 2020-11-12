@@ -1,0 +1,6 @@
+
+module: pam_pwquality.so
+name: system-auth
+type: password
+control: requisite
+arguments: gecoscheck=1, usercheck=1, enforce_for_root
